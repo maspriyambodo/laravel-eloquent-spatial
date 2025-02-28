@@ -29,7 +29,7 @@ class Point extends Geometry
 
     public function getWktData(): string
     {
-        return "{$this->longitude} {$this->latitude}";
+        return "{$this->longitude}, {$this->latitude}";//for mysql v8^
     }
 
     /**
